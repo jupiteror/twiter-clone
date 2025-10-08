@@ -16,7 +16,7 @@ type SidebarProps = {
 };
 
 // Menu items.
-const items = [
+const MOCKS = [
   {
     title: "Home",
     url: "#",
@@ -52,7 +52,7 @@ export function AppSidebar({ side }: SidebarProps) {
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {MOCKS.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
