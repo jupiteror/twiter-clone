@@ -6,5 +6,3 @@ export type RouteType = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   layout: JSX.Element | any;
 };
-
-export type RoutesType = { unknown: RouteType[]; user: RouteType[] };

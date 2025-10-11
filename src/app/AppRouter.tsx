@@ -1,4 +1,4 @@
-import { ROUTES } from "@/config/routes";
+import { ROUTES } from "@/config/routes.tsx";
 import { Route, Routes } from "react-router";
 import { Suspense } from "react";
 

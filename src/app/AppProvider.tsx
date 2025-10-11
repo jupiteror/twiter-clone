@@ -1,13 +1,9 @@
-import {BrowserRouter} from "react-router";
-import App from "@/app/App.tsx";
+import { BrowserRouter } from "react-router";
 
+import type { IWrapperProps } from "@/shared/types/wrapper.interface";
 
-const AppProvider = () => {
-    return(
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    )
-}
+const AppProvider = ({ children }: IWrapperProps) => {
+  return <BrowserRouter>{children}</BrowserRouter>;
+};
 
-export default AppProvider
+export default AppProvider;
