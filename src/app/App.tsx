@@ -1,24 +1,7 @@
-import { Button } from "@/components/ui/button";
-import AppRouter from "./AppRouter";
-import { AppSidebar } from "@/widgets/aside-bar/asidebar";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-// import { useState } from "react";
+import AppRouter from "@/app/AppRouter.tsx";
 
 function App() {
-  // const [tooglebtn, setTooglebtn] = useState(false);
-
-  return (
-    <div>
-      <SidebarProvider>
-        <header>
-          <SidebarTrigger />
-        </header>
-        <AppSidebar side="right" />
-      </SidebarProvider>
-      <AppRouter />
-      <Button>Hello</Button>
-    </div>
-  );
+  return <AppRouter/>;
 }
 
 export default App;
