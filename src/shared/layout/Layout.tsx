@@ -6,7 +6,7 @@ const Layout = ({ children }: IWrapperProps) => {
   return (
     <div className="flex justify-between">
       <RightSideBar />
-      <main>{children}</main>
+      <main className="flex justify-center w-full">{children}</main>
       <LeftSideBar />
     </div>
   );
