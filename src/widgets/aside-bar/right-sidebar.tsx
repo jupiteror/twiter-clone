@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { NAVIGATION } from "@/config/navigation";
+import type { PropsType } from "@/shared/types/props.type";
 import { NavLink, useNavigate } from "react-router";
 
-const RightSideBar = () => {
+const RightSideBar = ({ className }: PropsType) => {
   const navigate = useNavigate();
   return (
-    <div className="w-1/6">
+    <div className={`w-1/6 h-[1315px] border-r ${className} `}>
       <Button onClick={() => navigate(-1)}>Cancel</Button>
-      {NAVIGATION.map((nav) => (
-        <span className="flex justify-center items-center hover:bg-gray-200">
-          <NavLink className={"py-[6px]"} to={nav.path}>
+      {NAVIGATION.map((nav, key) => (
+        <span key={key} className="flex justify-center items-center ">
+          <NavLink className={"py-[6px] text-2xl"} to={nav.path}>
             {nav.label}
           </NavLink>
         </span>
