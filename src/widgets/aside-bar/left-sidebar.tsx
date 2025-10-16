@@ -1,12 +1,18 @@
 import { NAVIGATION } from "@/config/navigation";
+import type { PropsType } from "@/shared/types/props.type";
 import { NavLink } from "react-router";
 
-const LeftSideBar = () => {
+const LeftSideBar = ({ className }: PropsType) => {
   return (
-    <div className="w-1/6">
-      {NAVIGATION.map((nav) => (
-        <span className="flex justify-center items-center hover:bg-gray-200">
-          <NavLink to={nav.path}>{nav.label}</NavLink>
+    <div className={`w-1/6 h-[1315px] border-l ${className}`}>
+      {NAVIGATION.map((nav, key) => (
+        <span
+          key={key}
+          className="flex justify-center items-center hover:bg-gray-200"
+        >
+          <NavLink className={"text-2xl"} to={nav.path}>
+            {nav.label}
+          </NavLink>
         </span>
       ))}
     </div>
