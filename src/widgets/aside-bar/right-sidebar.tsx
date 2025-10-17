@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
+
 import { NAVIGATION } from "@/config/navigation";
+import { Button } from "@/shared/components/ui/button";
 import type { PropsType } from "@/shared/types/props.type";
 import { NavLink, useNavigate } from "react-router";
 
