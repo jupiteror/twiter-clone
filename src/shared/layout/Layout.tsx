@@ -3,7 +3,7 @@ import RightSideBar from "@/widgets/aside-bar/right-sidebar";
 import type { IWrapperProps } from "../types/wrapper.interface";
 import NestedLayout from "./NestedLayout";
 
-const Layout = ({ children, className }: IWrapperProps) => {
+const Layout = ({ children }: IWrapperProps) => {
   return (
     <div className="flex justify-between">
       <RightSideBar className="pt-10" />
