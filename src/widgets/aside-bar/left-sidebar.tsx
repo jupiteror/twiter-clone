@@ -4,13 +4,13 @@ import { NavLink } from "react-router";
 
 const LeftSideBar = ({ className }: PropsType) => {
   return (
-    <div className={`w-1/6 h-[1315px] border-l ${className}`}>
+    <div className={`w-1/6 h-[1315px] border-r ${className} `}>
       {NAVIGATION.map((nav, key) => (
         <span
           key={key}
-          className="flex justify-center items-center rounded-2xl py-6 hover:bg-secondary"
+          className="flex justify-center py-4 rounded-2xl items-center hover:bg-secondary "
         >
-          <NavLink className={" text-2xl"} to={nav.path}>
+          <NavLink className={"text-xl"} to={nav.path}>
             {nav.label}
           </NavLink>
         </span>
