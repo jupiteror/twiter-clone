@@ -7,5 +7,5 @@ export const PATHS = {
   LISTS: "/lists",
   PROFILE: "/profile",
   MORE: "/more",
-  LIST_FRIEND: "/list-friend",
+  // LIST_FRIEND: "/list-friend",
 };

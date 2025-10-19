@@ -8,9 +8,9 @@ const LeftSideBar = ({ className }: PropsType) => {
       {NAVIGATION.map((nav, key) => (
         <span
           key={key}
-          className="flex justify-center items-center hover:bg-gray-200"
+          className="flex justify-center items-center rounded-2xl py-6 hover:bg-secondary"
         >
-          <NavLink className={"text-2xl"} to={nav.path}>
+          <NavLink className={" text-2xl"} to={nav.path}>
             {nav.label}
           </NavLink>
         </span>
