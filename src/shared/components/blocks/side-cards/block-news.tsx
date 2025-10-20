@@ -1,3 +1,4 @@
+import { Button } from "../../ui/button";
 import NewsCard from "./news-card";
 
 //mock-data
@@ -21,10 +22,14 @@ const mock_news = [
 
 const NewsBlock = () => {
   return (
-    <div className="border rounded-sm p-2">
-        {mock_news.map((data, key) => (
-        <NewsCard key={key} title={data.title} subtitle={data.subtitle}/>
+    <div className="border  rounded-xl mx-5">
+      <h1 className="text-2xl text-center pt-2">Block News</h1>
+      {mock_news.map((data, key) => (
+        <NewsCard key={key} title={data.title} subtitle={data.subtitle} />
       ))}
+      <Button className="hover:bg-secondary w-full rounded-t-none rounded-b-xl">
+        show more...
+      </Button>
     </div>
   );
 };
