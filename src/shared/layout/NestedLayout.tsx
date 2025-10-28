@@ -6,7 +6,7 @@ const NestedLayout = ({ children }: IWrapperProps) => {
   return (
     <main className="w-full">
       <Header />
-      <Container>{children}</Container>
+      {children}
     </main>
   );
 };
