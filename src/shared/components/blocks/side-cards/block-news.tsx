@@ -22,8 +22,8 @@ const mock_news = [
 
 const NewsBlock = () => {
   return (
-    <div className="border  rounded-xl mx-5">
-      <h1 className="text-2xl text-center pt-2">Block News</h1>
+    <div className="border w-[350px] rounded-2xl mx-5">
+      <h1 className="text-2xl text-center pt-2">What’s happening:</h1>
       {mock_news.map((data, key) => (
         <NewsCard key={key} title={data.title} subtitle={data.subtitle} />
       ))}

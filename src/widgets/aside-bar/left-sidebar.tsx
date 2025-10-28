@@ -1,4 +1,5 @@
 import { NAVIGATION } from "@/config/navigation";
+import { Button } from "@/shared/components/ui/button";
 import type { PropsType } from "@/shared/types/props.type";
 import { NavLink } from "react-router";
 
@@ -8,13 +9,16 @@ const LeftSideBar = ({ className }: PropsType) => {
       {NAVIGATION.map((nav, key) => (
         <span
           key={key}
-          className="flex rounded-2xl items-center hover:bg-secondary "
+          className="flex w-[150px] rounded-2xl items-center hover:bg-secondary "
         >
           <NavLink className={"text-2xl py-5"} to={nav.path}>
             {nav.label}
           </NavLink>
         </span>
       ))}
+      <Button className="bg-secondary p-6 w-1/2 text-xl mt-5 rounded-2xl">
+        Tweet
+      </Button>
     </div>
   );
 };
