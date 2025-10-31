@@ -4,6 +4,10 @@ const HomePage = () => {
   return (
     <div className="bg-black-100">
       <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   );
 };
