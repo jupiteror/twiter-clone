@@ -1,7 +1,11 @@
 import PostId from "./postId/postId";
 
 const Post = () => {
-  return <PostId />;
+  return (
+    <div>
+      <PostId />
+    </div>
+  );
 };
 
 export default Post;

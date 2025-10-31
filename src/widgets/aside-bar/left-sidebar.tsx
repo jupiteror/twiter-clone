@@ -5,13 +5,13 @@ import { NavLink } from "react-router";
 
 const LeftSideBar = ({ className }: PropsType) => {
   return (
-    <div className={`w-1/4 h-[1315px] border-r ${className} `}>
+    <div className={`w-1/4 border-r ${className} `}>
       {NAVIGATION.map((nav, key) => (
         <span
           key={key}
-          className="flex w-[150px] rounded-2xl items-center hover:bg-secondary "
+          className="flex w-[150px] py-2 rounded-2xl items-center hover:bg-secondary "
         >
-          <NavLink className={"text-2xl py-5"} to={nav.path}>
+          <NavLink className={"text-2xl py-3"} to={nav.path}>
             {nav.label}
           </NavLink>
         </span>
