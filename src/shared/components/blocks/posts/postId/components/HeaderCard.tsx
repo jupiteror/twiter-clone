@@ -7,7 +7,7 @@ const HeaderCard = () => {
       <div>
         <div className="flex justify-start items-center gap-2">
           <p className="m-0 p-0 user">Username</p>
-          <CardDescription className="border-l border-b px-2 rounded-xl">
+          <CardDescription className="hover:border p-[5px] rounded-xl hover:">
             @username
           </CardDescription>
           <CardDescription>23 h</CardDescription>
