@@ -1,4 +1,5 @@
 import { NAVIGATION } from "@/config/navigation";
+import PostWindow from "@/shared/components/blocks/post-window/post-window";
 import { Button } from "@/shared/components/ui/button";
 import type { PropsType } from "@/shared/types/props.type";
 import { NavLink } from "react-router";
@@ -16,9 +17,10 @@ const LeftSideBar = ({ className }: PropsType) => {
           </NavLink>
         </span>
       ))}
-      <Button className="bg-secondary p-6 w-1/2 text-xl mt-5 rounded-2xl">
+      {/* <Button className="bg-secondary p-6 w-1/2 text-xl mt-5 rounded-2xl">
         Tweet
-      </Button>
+      </Button> */}
+      <PostWindow className="bg-secondary py-2 w-1/2 text-xl mt-5 rounded-2xl cursor-pointer" />
     </div>
   );
 };
