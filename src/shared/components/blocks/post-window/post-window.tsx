@@ -3,24 +3,32 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/src/shared/ui/dialog";
+import { Textarea } from "@/src/shared/ui/textarea";
+import { Copy } from "lucide-react";
 
 const PostWindow = ({ className }: IWrapperProps) => {
   return (
     <div>
       <Dialog>
-        <DialogTrigger className={`${className}`}>Open</DialogTrigger>
+        <DialogTrigger className={`${className}`}>Twit</DialogTrigger>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Are you absolutely sure?</DialogTitle>
             <DialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              <Textarea
+                className="w-full resize-none h-[200px] border-none"
+                placeholder="Twit now baby..."
+              />
             </DialogDescription>
           </DialogHeader>
+          <DialogFooter className="border-t pt-2 px-1">
+            <Copy className="h-5 w-5" />
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
