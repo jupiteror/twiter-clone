@@ -1,3 +1,4 @@
+import { PATHS } from "@/config/paths";
 import { Button } from "@/shared/components/ui/button";
 import {
   DropdownMenu,
@@ -14,8 +15,11 @@ import {
 } from "@/src/shared/ui/dropdown-menu";
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { Settings } from "lucide-react";
+import { useNavigate } from "react-router";
 
 export function DropDownBtn() {
+  const navigate = useNavigate();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -25,7 +29,9 @@ export function DropDownBtn() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="start">
         <DropdownMenuGroup>
-          <DropdownMenuItem>Profile</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => navigate(PATHS.PROFILE)}>
+            Profile
+          </DropdownMenuItem>
           <DropdownMenuItem>Billing</DropdownMenuItem>
           <DropdownMenuItem>Settings</DropdownMenuItem>
           <DropdownMenuItem>Keyboard shortcuts</DropdownMenuItem>

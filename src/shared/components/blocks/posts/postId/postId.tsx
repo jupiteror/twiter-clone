@@ -46,7 +46,7 @@ const PostId = () => {
           </CardDescription>
         </CardContent>
         <CardFooter>
-          <FooterCard className="px-6" />
+          <FooterCard />
         </CardFooter>
       </Card>
     </div>
