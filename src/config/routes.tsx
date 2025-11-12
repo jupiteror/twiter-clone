@@ -45,4 +45,9 @@ export const ROUTES: RouteType[] = [
     element: <Bookmarks />,
     layout: Layout,
   },
+  {
+    path: "/more",
+    element: "",
+    layout: "",
+  },
 ];

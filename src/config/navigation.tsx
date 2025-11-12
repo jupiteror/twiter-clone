@@ -29,4 +29,7 @@ export const NAVIGATION = [
     label: "Bookmarks",
     path: PATHS.BOOKMARKS,
   },
+  {
+    label: "More",
+  },
 ];

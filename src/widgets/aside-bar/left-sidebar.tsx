@@ -1,6 +1,6 @@
 import { NAVIGATION } from "@/config/navigation";
 import PostWindow from "@/shared/components/blocks/post-window/post-window";
-import { Button } from "@/shared/components/ui/button";
+
 import type { PropsType } from "@/shared/types/props.type";
 import { NavLink } from "react-router";
 
@@ -12,7 +12,7 @@ const LeftSideBar = ({ className }: PropsType) => {
           key={key}
           className="flex w-[150px] py-2 rounded-2xl items-center hover:bg-secondary "
         >
-          <NavLink className={"text-2xl py-3"} to={nav.path}>
+          <NavLink className={"text-2xl py-3"} to={nav.path || ""}>
             {nav.label}
           </NavLink>
         </span>

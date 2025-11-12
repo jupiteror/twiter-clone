@@ -21,7 +21,7 @@ const PostWindow = ({ className }: IWrapperProps) => {
             <DialogTitle>Are you absolutely sure?</DialogTitle>
             <DialogDescription>
               <Textarea
-                className="w-full resize-none h-[200px] border-none"
+                className="w-full resize-[20px] h-[200px] border-none text-card"
                 placeholder="Twit now baby..."
               />
             </DialogDescription>
